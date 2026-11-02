@@ -35,6 +35,40 @@
     <footer>ParkEase · Prototype interface · Demo data is stored in this browser only</footer>
   </main>
   <div id="modal-root"></div>
-  <script src="app.js"></script>
+  <!-- Firebase SDK -->
+
+<script src="https://www.gstatic.com/firebasejs/13.1.0/firebase-app-compat.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/13.1.0/firebase-auth-compat.js"></script>
+
+<!-- ParkEase Firebase configuration -->
+
+<script>
+
+  const firebaseConfig = {
+
+    apiKey: "AIzaSyAzXQOkyPhyDvOcf9SEIObZkMFsvoxWBN8",
+
+    authDomain: "parkease-8a3ec.firebaseapp.com",
+
+    projectId: "parkease-8a3ec",
+
+    storageBucket: "parkease-8a3ec.firebasestorage.app",
+
+    messagingSenderId: "364398860173",
+
+    appId: "1:364398860173:web:b0d310c255487235448fc4"
+
+  };
+
+  firebase.initializeApp(firebaseConfig);
+
+  window.auth = firebase.auth();
+
+</script>
+
+<!-- ParkEase application -->
+
+<script src="app.js"></script>
 </body>
 </html>
