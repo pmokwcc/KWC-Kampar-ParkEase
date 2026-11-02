@@ -1,0 +1,62 @@
+{
+  "Residents": [
+    "ParkingID",
+    "ParkingBay",
+    "UnitNo",
+    "ResidentName",
+    "Phone",
+    "Email",
+    "MonthlyRent",
+    "StartDate",
+    "EndDate",
+    "Status"
+  ],
+  "Bills": [
+    "BillID",
+    "BillingMonth",
+    "ParkingID",
+    "AmountDue",
+    "DueDate",
+    "AmountPaid",
+    "Status",
+    "Balance"
+  ],
+  "Payments": [
+    "TransactionID",
+    "PaymentDate",
+    "ParkingID",
+    "BillingMonth",
+    "BankReference",
+    "Amount",
+    "ProofFileID",
+    "VerificationStatus",
+    "RecordedBy",
+    "VerifiedDate"
+  ],
+  "ReminderLog": [
+    "ReminderDate",
+    "ParkingID",
+    "ResidentName",
+    "BillingMonth",
+    "Outstanding",
+    "ReminderStage",
+    "Method",
+    "Notes"
+  ],
+  "Users": [
+    "AuthUID",
+    "Email",
+    "Role",
+    "ParkingID",
+    "Status"
+  ],
+  "AuditLog": [
+    "Timestamp",
+    "ActorUID",
+    "ActorEmail",
+    "Action",
+    "RecordType",
+    "RecordID",
+    "Details"
+  ]
+}

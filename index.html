@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Condo Parking Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand"><div class="brand-mark">P</div><div><strong>ParkEase</strong><small>Condo Parking Manager</small></div></div>
+    <div class="workspace-label">WORKSPACE</div>
+    <nav id="nav">
+      <button class="nav-item active" data-page="overview">▦ <span>Overview</span></button>
+      <button class="nav-item" data-page="residents">♙ <span>Residents & Bays</span></button>
+      <button class="nav-item" data-page="billing">▤ <span>Monthly Billing</span></button>
+      <button class="nav-item" data-page="payments">↗ <span>Payments</span></button>
+      <button class="nav-item" data-page="reminders">♧ <span>Reminders</span></button>
+      <button class="nav-item" data-page="reports">▥ <span>Reports</span></button>
+    </nav>
+    <div class="sidebar-bottom"><div class="demo-pill">● DEMO MODE</div><small>Sample records only<br>Not connected to live data</small></div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div><div class="eyebrow">MANAGEMENT WORKSPACE</div><h1 id="page-title">Overview</h1></div>
+      <div class="top-actions">
+        <label class="role-switch">Preview as
+          <select id="role-select"><option value="staff">Staff</option><option value="resident">Resident</option></select>
+        </label>
+        <div class="avatar">S</div>
+      </div>
+    </header>
+    <section id="app" class="content"></section>
+    <footer>ParkEase · Prototype interface · Demo data is stored in this browser only</footer>
+  </main>
+  <div id="modal-root"></div>
+  <script src="app.js"></script>
+</body>
+</html>
